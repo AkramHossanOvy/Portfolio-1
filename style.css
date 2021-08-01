@@ -10,31 +10,49 @@
     background-color:black;
     font-weight: bold;
      }
+    /*-menu--*/
 
-.menu li{
+     .menu ul li a{
+        text-decoration: none;
+        color: aliceblue;
+        font-size: 20px;
+        padding: 20px;
+        text-transform: uppercase;
+       
+    }
+    .menu ul{
     list-style-type: none;
-    float:left;
+    float: right;
     padding: 20px;
-    font-size: 20px;
     
-}
-.menu li a{
-    text-decoration: none;
-    color: rgb(243, 229, 229);
+    }
+    .menu ul li{
+        display: inline-block;
+    }
+    .menu a:hover{
+        background-color: rgb(255, 71, 47);
+        color: rgb(0, 255, 115);
+    }
+
+ /*-menu end--*/
+
+  /*-start logo--*/
+.logo{
+    color: rgb(0, 255, 115);
+    font-size: 30px;
     padding: 20px;
-    transition: .5s;
-    
+    margin-left: 30px;
 }
-li :hover{
-    background-color: rgb(255, 136, 0);
-    
+span{
+    color:rgb(240, 18, 18);
 }
-/*close menu bar*/
+
+/*-End logo--*/
      
 
 .text{
-    padding:15%;
-    padding-left:19% ;
+    padding:10%;
+    margin-left:19% ;
     
 }
 .text p:nth-child(1){
@@ -58,6 +76,8 @@ color: chartreuse;
     color: oldlace;
      
 }
+
+
 .mn{
     padding-top: 20px;
 }
@@ -74,16 +94,17 @@ button :hover{
 
 
 .model{
-height: 560px;
+height: 500px;
 position: absolute;
 bottom: 20px;
 left:60%;
-padding:10%;
+padding:15%;
 transform: translateX(-30%);
 
 }
 /*body close*/
 
+/*Start about*/
 .contex{
     height: 15%;
     width:50%;
@@ -91,7 +112,7 @@ transform: translateX(-30%);
     border-radius: 20px;
     box-shadow: 2px 2px 12px ;
     display: flex;
-   margin-left: 25%;
+   margin-left:25%;
     position: relative;
     
 }
@@ -105,7 +126,11 @@ transform: translateX(-30%);
     color:rgb(32, 3, 19);
     font-size: 15px;
      }
+
 /*body close*/
+
+/*Start service*/
+
 .statement{
     height: 550px;
     background-color:#222;
@@ -126,6 +151,8 @@ padding: 2%;
 .container{
     display:flex;
     justify-content: center;
+    transform: scale(1.05);
+
 }
 .box1,.box2,.box3{
     width: 350px;
@@ -180,14 +207,20 @@ padding-bottom: 3%;
    color: cornsilk;
 }
 .container :hover{
-    background-color: rgb(109, 189, 28);
-    transform: scale(1.05);
+    background-color: rgb(82, 155, 9);
+    
+    
 }
+/*end service*/
+
+/*Start contact*/
 .sub{
     width: 100%;
-    height: 200px;
+    height: 500px;
     background-color: darkred;
+    font-weight: bold;
 }
+
 .contact{
     justify-content: center;
     text-align: center;
@@ -209,7 +242,39 @@ padding-bottom: 3%;
     color: rgb(0, 12, 2);
     font-weight: bold;
     border: none;
+    font-size: 15px;
 }
+.me{
+    margin-top: 20px;
+    text-align: center;
+}
+input{
+
+width: 40%;
+padding:20px;
+border-radius: 20px;
+}
+.me button{
+    font-size: 15px;
+    width: 120px;
+    height: 40px;
+    border-radius:20px;
+    color: rgb(68, 223, 6);
+    font-weight: bold;
+    margin-top: 10px;
+    background-color: #222;
+}
+.msg{
+    padding: 40px;
+}
+
+.me button:hover{
+    background-color:fuchsia;
+}
+
+/*End contact*/
+
+/*Start social*/
 .end{
     width: 100%;
     height: 280px;
@@ -219,6 +284,7 @@ padding-bottom: 3%;
     position: relative;
     align-items: center;
 }
+
 footer p:nth-child(1){
     font-size: 30px;
     padding: 20px;
@@ -268,4 +334,6 @@ color:#3B5998;
 
  .copy{
      color: deeppink;
+    
  }
+ /*Enf social*/
